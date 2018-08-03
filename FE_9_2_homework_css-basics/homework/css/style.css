@@ -1,0 +1,161 @@
+ @media print {
+ 	.tm-sidebar, #about, section:not(:first-of-type){
+ 		display: none;
+ 	}
+ 	.tm-main-content{
+ 		margin: 25px 0;
+ 	}
+ 	.tm-banner {
+ 		height: 200px;
+ 		padding: 0;
+ 		margin: 0 20px;
+ 	}
+ 	.tm-banner-text {
+ 		color: whitesmoke;
+ 	}
+ 	.flex-2-col {
+ 		display: block;
+ 	}
+ 	.pad {
+ 		padding: 0 0 0 50px;
+ 		color: black;
+ 	}
+ 	.pad h2 {
+ 		color: blue;
+ 	}
+ 	.tm-section-description {
+ 		width: 550px;
+ 	}
+ 	.flex-item:last-child{
+ 		text-align: center;
+ 	}
+ }
+ @media screen {
+
+ 	/* 1) */
+
+	.thumbnail {
+		border-radius: 50%; 
+	}
+	.boxes .box-bg h2:hover {
+		background: #31b0d5;
+		color: #ffffff;
+		font-weight: bold;
+	}
+
+	/* 3) */
+
+	p::first-letter{
+		color: #76cdd7;
+		font-size: 30px;
+	}
+
+	/* 4) */
+	
+	.tm-sidebar, .tm-content-box {
+		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	}
+
+	/* 5) */
+	
+	.tm-content-box {
+		position: relative;
+	}
+	.tm-content-box:nth-child(1)::before, .heading::before {
+		position: absolute;
+		content: "";
+		width: 0;
+        height: 0;
+        top: 0;
+        left: 0;
+		border-top: 20px solid #31b0d5;
+		border-right: 100px solid transparent;
+	}
+
+	
+	/* 6) */
+
+	.carousel-content:first-child h2 {
+		color: gainsboro;
+		letter-spacing: 5px;
+	}
+	
+	/* 7) */
+
+	h2 + p {
+		font-style: italic;
+		line-height: 1.6;
+	}
+
+	/* 8) */
+
+	p.tm-section-description {
+		text-indent: 20px;
+		line-height: 2em;
+	}
+
+	/* 9) */
+
+	.heading h2 {
+		text-align: center;
+		color: #76cdd7;
+	}
+	.heading a:visited {
+		color: silver;
+	}
+	.heading a:hover {
+		border-bottom: double #76cdd7;
+		text-decoration: none;
+		color: #76cdd7;
+	}
+	a.text:after {
+	   content: "New";
+	   vertical-align: super;
+	   font-size: 0.7em;
+	   color: red;
+ }
+
+	/* 10) */
+
+	.boxes .gallery-container .box p:first-letter {
+        color: #000000;
+    }
+ 	.blocks .gallery-container .box:nth-child(2n+1) {
+        background-color: #f2f2f2;
+    }
+
+    .boxes.gallery-container div h2{
+        font-size: 2.88em;
+    }
+
+    .boxes.gallery-container .box p {
+        font-size: 1.44em;
+        line-height: 1.4em;
+    }
+
+    
+
+ 	/* 11) */
+
+ 	.tm-main-nav li {
+		border-bottom: 2px dotted #c0c0c0;
+ 	}
+ 	.tm-main-nav li:last-child {
+ 		border: none;
+ 	}
+
+ 	/* 12) */
+
+ 	.form-control, .submit-btn {
+ 		color: red;
+ 	}
+ 	.mandatory-field:after {
+ 		content: "*";
+ 		color: red;
+ 	}
+ 	.submit-btn:hover {
+ 		color: #ffffff;
+ 		background: #31b0d5;
+ 		border-color: #31b0d5;
+ 	}
+ }
