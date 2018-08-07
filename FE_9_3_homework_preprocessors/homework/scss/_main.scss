@@ -1,0 +1,156 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: $Font_Style;
+	background: $Back_Color;
+	width: 960px;
+	margin: 0 auto;
+}
+header {
+	display: flex;
+	}
+	.logo {
+		img {
+			width: 400px;
+			height: 250px;
+			}			  }
+		nav {
+			width: 560px;
+			height: 60px;
+			margin-top: 160px;
+			border-top: $Border2B;
+			border-bottom: $Border2B;
+			a {
+				text-decoration: none;
+				color: $SColor;
+				font-size: 18px;
+				text-transform: uppercase;
+				margin-left: 5px;
+				padding: 18px 56px;
+				display: inline-block;
+				&:hover{
+					background: $A_Hover;
+					}
+				}
+				}
+.toolbar {
+	text-align: $R_Align;
+	input {
+		background: $Back_Color;
+		border: 1px solid $SColor;
+		margin: 20px 0 10px;
+		padding: 10px 0 10px 20px;
+		color: $SColor;
+		&::placeholder {
+			color: $SColor;
+			font-weight: bold;
+}
+}
+}
+.post-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;}
+	article {
+		background: $Article_Color;
+		width: 465px;
+		margin: 10px 0;
+		padding: 10px;
+		height: 100%;
+		img {
+			width: 445px;
+			height: 325px;
+			}
+		&:first-child {
+			img {
+				height: 540px;
+			}
+		}
+		div {
+			padding: 0 10px;
+			.post-description {
+				padding: 5px 0 10px 5px;
+				font-size: 12px;
+				color: $P_Descp_Color;
+			}
+			h3 {
+				color: $H3_Art_Color;
+				margin: 0;
+				text-transform: uppercase;
+				border-top: $Border2B;
+				padding-top: 5px;
+				}
+			p {
+				font-size: 15px;
+				margin-top: 5px;
+				color: $P_Color;
+				line-height: 1.4;
+				}
+			}
+		}
+.about {
+	div {
+		h1 {
+			text-transform: uppercase;
+			color: $SColor;
+			text-align: $R_Align;
+			}
+		p {
+			color: $P_Color;
+			font-size: 15px;
+			line-height: 1.4;
+		}
+		img {
+			width: 100%;
+			margin-bottom: 50px;
+			}
+		}
+	}
+.contact-form {
+	h1,h4 {
+		text-transform: uppercase;
+		color: $SColor;
+		text-align: $R_Align;
+		margin: 0;
+	}
+	}
+	form {
+		p {
+			text-align: $R_Align;
+			input,textarea {
+				background: $Back_Color;
+				width: 100%;
+				border: 1px solid $Border_Paragr_Color;
+				padding: 10px 20px;
+				&[type="submit"] {
+					width: 200px;
+					background: $SColor;
+					border: none;
+					color: #ffffff;
+					text-transform: uppercase;
+					&:focus {
+					background: $A_Hover;
+				}
+					}
+				&:focus {
+					background: $Article_Color;
+				}
+					}
+			textarea {
+				height: 100px;
+				&::placeholder {
+					font-family: Arial;
+					}
+					}
+				}
+			}
+footer {
+	margin-bottom: 5px;
+	span {
+		color: $P_Color;
+		font-size: 11px;
+		}
+		}

@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Palatino Linotype", serif;
+  background: #efefef;
+  width: 960px;
+  margin: 0 auto; }
+
+header {
+  display: flex; }
+
+.logo img {
+  width: 400px;
+  height: 250px; }
+
+nav {
+  width: 560px;
+  height: 60px;
+  margin-top: 160px;
+  border-top: 2px solid #cfd8dc;
+  border-bottom: 2px solid #cfd8dc; }
+  nav a {
+    text-decoration: none;
+    color: #fc5830;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left: 5px;
+    padding: 18px 56px;
+    display: inline-block; }
+    nav a:hover {
+      background: #1fbcd3; }
+
+.toolbar {
+  text-align: right; }
+  .toolbar input {
+    background: #efefef;
+    border: 1px solid #fc5830;
+    margin: 20px 0 10px;
+    padding: 10px 0 10px 20px;
+    color: #fc5830; }
+    .toolbar input::placeholder {
+      color: #fc5830;
+      font-weight: bold; }
+
+.post-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+article {
+  background: #ffffff;
+  width: 465px;
+  margin: 10px 0;
+  padding: 10px;
+  height: 100%; }
+  article img {
+    width: 445px;
+    height: 325px; }
+  article:first-child img {
+    height: 540px; }
+  article div {
+    padding: 0 10px; }
+    article div .post-description {
+      padding: 5px 0 10px 5px;
+      font-size: 12px;
+      color: #bdbdbd; }
+    article div h3 {
+      color: #617d8a;
+      margin: 0;
+      text-transform: uppercase;
+      border-top: 2px solid #cfd8dc;
+      padding-top: 5px; }
+    article div p {
+      font-size: 15px;
+      margin-top: 5px;
+      color: #757575;
+      line-height: 1.4; }
+
+.about div h1 {
+  text-transform: uppercase;
+  color: #fc5830;
+  text-align: right; }
+.about div p {
+  color: #757575;
+  font-size: 15px;
+  line-height: 1.4; }
+.about div img {
+  width: 100%;
+  margin-bottom: 50px; }
+
+.contact-form h1, .contact-form h4 {
+  text-transform: uppercase;
+  color: #fc5830;
+  text-align: right;
+  margin: 0; }
+
+form p {
+  text-align: right; }
+  form p input, form p textarea {
+    background: #efefef;
+    width: 100%;
+    border: 1px solid #cfd8dc;
+    padding: 10px 20px; }
+    form p input[type="submit"], form p textarea[type="submit"] {
+      width: 200px;
+      background: #fc5830;
+      border: none;
+      color: #ffffff;
+      text-transform: uppercase; }
+      form p input[type="submit"]:focus, form p textarea[type="submit"]:focus {
+        background: #1fbcd3; }
+    form p input:focus, form p textarea:focus {
+      background: #ffffff; }
+  form p textarea {
+    height: 100px; }
+    form p textarea::placeholder {
+      font-family: Arial; }
+
+footer {
+  margin-bottom: 5px; }
+  footer span {
+    color: #757575;
+    font-size: 11px; }
+
+/*# sourceMappingURL=style2.css.map */
