@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0a1223;
+}
+#facts {
+    width: 90vw;
+    margin: 0 auto;
+}
+  .header_nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2%;
+    margin-bottom: 12%;
+  }
+  .header_nav a {
+    color: #5d5d5d;
+    margin-left: 4%;
+    text-decoration: none;
+  }
+  
+  .header_nav a:active {
+    color: #54597d;
+  }
+  .active {
+    color: #54597d;
+  }
+  .header_nav a:hover {
+    color: #54597d;
+  }
+  h1 {
+    color: #ddd;
+    font-size: 5vw;
+    text-align: center;
+  }
+  article {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  }
+  .articles article:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .articles {
+    margin: 0 auto;
+    width: 70vw;
+    margin-bottom: 12%;
+    margin-top: 12%;
+  }
+  h2 {
+    font-size: 1.8em;
+    color: #ddd;
+    background: linear-gradient(45deg,#FFF, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  img {
+    width: 65vh;
+  }
+  .text {
+    width: 48%;
+  }
+  .text p {
+    text-align: justify;
+    text-indent: 5%;
+    color: #5d5d5d;
+  }
+  .up {
+    display: none;
+  }
+@media only screen and (max-width: 991px) {
+  .header_nav {
+    justify-content: center;
+  }
+  .articles article, .articles article:nth-child(even) {
+    flex-direction: column;
+  }
+  .text {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 575px) {
+  body {
+    background: #fff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  .header_nav {
+    flex-direction: column;
+    margin: 0;
+  }
+  .header_nav a {
+    font-size: 20px;
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  .active {
+    font-weight: bold;
+    color: #54597a;
+  }
+  h2 {
+    -webkit-text-fill-color: #000;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  h1,h2,p {
+    color: #000;
+  }
+  img {
+    width: 100%;
+  }
+  .up {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background: #5ebcff;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    box-shadow: 5px 10px 15px #d3d3d3;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 25px 10px;
+  }
+  .articles {
+    margin-bottom: 200px;
+  }
+}
