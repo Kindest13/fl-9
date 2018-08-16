@@ -1,6 +1,6 @@
-const side_A=+prompt('Input side A: ','');
-const side_B=+prompt('Input side B: ','');
-const angle=+prompt('Input angle: ','');
+const side_A=parseFloat(prompt('Input side A: ',''));
+const side_B=parseFloat(prompt('Input side B: ',''));
+const angle=parseFloat(prompt('Input angle: ',''));
 const max_Angle=180;
 const convert=Math.PI / max_Angle;
 let output;

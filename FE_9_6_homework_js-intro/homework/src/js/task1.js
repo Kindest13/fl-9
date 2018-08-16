@@ -1,5 +1,5 @@
-const price=+prompt('Amount of money: ', '');
-const discount=+prompt('Your discount: ', '');
+const price=parseFloat(prompt('Amount of money: ', ''));
+const discount=parseFloat(prompt('Your discount: ', ''));
 let output;
 
 function isValidNumber(num) {
