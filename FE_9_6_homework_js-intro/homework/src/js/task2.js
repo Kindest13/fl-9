@@ -9,6 +9,10 @@ function isValidNumber(num) {
 	return !isNaN(num) && num>=0;
 }
 
+function rounding(num) {
+	return Math.round(num*100)/100;
+}
+
 function findSideC(side1,side2,ang) {
  return Math.sqrt(Math.pow(side1,2)+Math.pow(side2,2)-2*side1*side2*Math.cos(ang*convert));
 }
@@ -25,8 +29,8 @@ if(isValidNumber(side_A) && isValidNumber(side_B) && isValidNumber(angle) && ang
 	const side_C=findSideC(side_A,side_B,angle);
 	const square=findSquare(side_A,side_B,angle);
 	const perimeter=findPerimeter(side_A,side_B,side_C);
-	output='c length: '+Math.round(side_C*100)/100+'\n'+'Triangle square: '+Math.round(square*100)/100+
-		'\n'+'Triangle perimeter: '+Math.round(perimeter*100)/100+'\n';
+	output='c length: '+rounding(side_C)+'\n'+'Triangle square: '+rounding(square)+
+	'\n'+'Triangle perimeter: '+rounding(perimeter)+'\n';
 } else {
 	output='Invalid data';
 }
