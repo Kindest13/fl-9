@@ -9,8 +9,9 @@ function randomNumber(max) {
 function game(r_Factor,p_Factor) {
 	let prize = 10;
 	let attempt = 3;
+	let rand_Number = randomNumber(max*r_Factor);
 	while(attempt>0) { // cycle for 3 attempts
-		let rand_Number = randomNumber(max*r_Factor);
+		alert(rand_Number);
 		let num = +prompt('Enter a number from [' + 0 + ',' + max*r_Factor + ']' + '\nAttempts left: ' +
 		attempt + '\nTotal prize: ' + sum + '\nPossible prize on current attempt: ' + Math.floor(prize*p_Factor),'');
 		if(num === rand_Number) { // if user guessed
