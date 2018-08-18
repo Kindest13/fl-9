@@ -10,7 +10,8 @@ function isValidNumber(num) {
 }
 
 function rounding(num) {
-	return Math.round(num * 100) / 100;
+	let temp = 100; // variable for rounding
+	return Math.round(num * temp) / temp;
 }
 
 function findSideC(side1,side2,ang) {
