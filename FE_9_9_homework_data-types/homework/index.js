@@ -20,10 +20,8 @@ function map(mas, output) {
 	forEach(mas, function(el) {
  newMas.push(output(el)) 
 });
+  return newMas;
 }
-map([MagicNumbers.two, MagicNumbers.five, MagicNumbers.eight], function(el) {
- return el + MagicNumbers.three; 
-});
 // Task #4
 function filter(mas, func) {
 	const filteredArray = [];
